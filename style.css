@@ -86,6 +86,7 @@ section#hero #info button {
   color: #ffffff;
   background-image: linear-gradient(to right, #383b4a, #000000);
   cursor: pointer;
+  width: max-content;
 }
 
 section#hero #info a {
