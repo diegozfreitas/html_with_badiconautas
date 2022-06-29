@@ -1,3 +1,134 @@
-body{
-    
+body {
+  margin: 0;
 }
+
+.container {
+  max-width: 1366px;
+  margin: auto;
+}
+
+header {
+  background-color: #e5e5e5;
+}
+
+header div.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #e5e5e5;
+}
+
+footer div.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div.container div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer div.container div h4 {
+  text-align: center;
+  width: 100%;
+}
+
+footer div.container.informacoes div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* inicio sessao hero */
+section#hero {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-image: url("./assets/image/image_hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ebeff4;
+}
+
+section#hero #info {
+  min-height: 285px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#hero #info h1 {
+  font-size: 88px;
+  font-weight: 700;
+  color: #18181a;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+section#hero #info p {
+  color: #87898f;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+section#hero #info button {
+  height: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 10px;
+  border: 0px;
+  background: #383b4a;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #383b4a, #000000);
+  cursor: pointer;
+}
+
+section#hero #info a {
+  color: #18181a;
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+@media (max-width: 786px) {
+  section#hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-image: url("./assets/image/image_hero.png");
+    background-position: -53px 190px;
+    background-repeat: no-repeat;
+    background-color: #ebeff4;
+    background-size: 140%;
+  }
+
+  section#hero #info {
+    min-height: unset;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  section#hero #info h1 {
+    font-size: 48px;
+  }
+
+  section#hero #info .container-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section#hero #info .container-links a {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  section#hero #info button {
+    max-width: 200px;
+    margin-bottom: 16px;
+  }
+}
+/* fim sessao hero  */
