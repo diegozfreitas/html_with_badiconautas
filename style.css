@@ -1,3 +1,14 @@
+:root {
+  --main-color-primary: blue;
+  --main-color-text: #87898f;
+  --main-color-text_dark: #000000;
+  --main-color-text_light: #87898f;
+  --main-color-title: #18181a;
+  --main-color-background: #e5e5e5;
+  --main-color-background_light: #ebeff4;
+  --main-color-background_dark: #383b4a;
+}
+
 body {
   margin: 0;
 }
@@ -8,7 +19,7 @@ body {
 }
 
 header {
-  background-color: #e5e5e5;
+  background-color: var(--main-color-background);
 }
 
 header div.container {
@@ -19,7 +30,7 @@ header div.container {
 }
 
 footer {
-  background-color: #e5e5e5;
+  background-color: var(--main-color-background);
 }
 
 footer div.container {
@@ -50,7 +61,7 @@ section#hero {
   background-image: url("./assets/image/image_hero.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #ebeff4;
+  background-color: var(--main-color-background_light);
 }
 
 section#hero #info {
@@ -64,13 +75,13 @@ section#hero #info {
 section#hero #info h1 {
   font-size: 88px;
   font-weight: 700;
-  color: #18181a;
+  color: var(--main-color-title);
   margin-top: 0;
   margin-bottom: 0;
 }
 
 section#hero #info p {
-  color: #87898f;
+  color: var(--main-color-text);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.3px;
@@ -82,9 +93,13 @@ section#hero #info button {
   padding-right: 32px;
   border-radius: 10px;
   border: 0px;
-  background: #383b4a;
-  color: #ffffff;
-  background-image: linear-gradient(to right, #383b4a, #000000);
+  background: var(--main-color-background_dark);
+  color: var(--main-color-background_light);
+  background-image: linear-gradient(
+    to right,
+    var(--main-color-background_dark),
+    var(--main-color-text_dark)
+  );
   cursor: pointer;
   width: max-content;
 }
@@ -102,7 +117,7 @@ section#hero #info a {
     background-image: url("./assets/image/image_hero.png");
     background-position: -53px 190px;
     background-repeat: no-repeat;
-    background-color: #ebeff4;
+    background-color: var(--main-color-background_light);
     background-size: 140%;
   }
 
